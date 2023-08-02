@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    color: white;
+}
+
+h1 {
+    margin: 20px 0;
+    padding: 0;
+}
+
+p {
+    font-size: 50px;
+    display: inline-table;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 25%;
+}
+
+button {
+    color: azure;
+    background-color: rgb(42, 42, 42);
+    font-size: 15px;
+    border-radius: 45px;
+}
+
+table {
+    height: 10px;
+}
+
+table, tr {
+    margin: 4% auto;
+}
+
+tr, td {
+    border: 5px solid white;
+    height: 110px;
+    width: 110px;
+}
+
+.divTable {
+    height: 100%;
+    width: 100%;
+    max-height: 110px;
+}
+
+.center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.main {
+    height: 97.929vh;
+    width: 99vw;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(32deg, #e66465, #9198e5);
+}

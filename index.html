@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body>
+    <div class="main center">
+        <h1 class="center">Tic Tac Toe</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td><div id="00" class="divTable" onclick="cellClicked(this.id)"><p id="text00"></h1></div></th>
+                    <td><div id="01" class="divTable" onclick="cellClicked(this.id)"><p id="text01"></h1></div></th>
+                    <td><div id="02" class="divTable" onclick="cellClicked(this.id)"><p id="text02"></h1></div></th>
+                </tr>
+                <tr>
+                    <td><div id="10" class="divTable" onclick="cellClicked(this.id)"><p id="text10"></h1></div></td>
+                    <td><div id="11" class="divTable" onclick="cellClicked(this.id)"><p id="text11"></h1></div></td>
+                    <td><div id="12" class="divTable" onclick="cellClicked(this.id)"><p id="text12"></h1></div></td>
+                </tr>
+                <tr>
+                    <td><div id="20" class="divTable" onclick="cellClicked(this.id)"><p id="text20"></h1></div></td>
+                    <td><div id="21" class="divTable" onclick="cellClicked(this.id)"><p id="text21"></h1></div></td>
+                    <td><div id="22" class="divTable" onclick="cellClicked(this.id)"><p id="text22"></h1></div></td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="win"></h2>
+        <button onclick="window.location.reload()">New Game</button>
+    </div>
+</body>
+</html>
