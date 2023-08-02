@@ -15,7 +15,7 @@ function cellClicked(id) {
     let row = id.charAt(0);
     let column = id.charAt(1);
 
-    if(row>=0 && row<=2 && column>=0 && column<=2) {
+    if(row>=0 && row<=2 && column>=0 && column<=2 && win == false) {
         console.log("Cell in row", row , "and column", column,"was clicked.");
         if(player === 1 && play[row][column] == "empty")
         {
@@ -30,9 +30,11 @@ function cellClicked(id) {
             play[row][column]="2";
         }
     }
-    oldPlayer = player;
-    player = newPlayer;
-    checkForWin(oldPlayer);
+    if(win==false) {
+        oldPlayer = player;
+        player = newPlayer;
+        checkForWin(oldPlayer);
+    }
 }
 
 function checkForWin(oldPlayer) {
